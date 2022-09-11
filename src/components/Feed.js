@@ -2,6 +2,8 @@ import userIcon from '../images/user.svg';
 import clockIcon from '../images/clock.svg';
 import emptyFolderIcon from '../images/empty-folder.svg';
 
+import '../styles/Feed.css';
+
 export default function Feed(props) {
     
     if (props.posts.length == 0) {
