@@ -12,8 +12,9 @@ export default function Feed(props) {
                 <img src={emptyFolderIcon} alt="Empty folder"></img>
                 
                 <h1>Não encontramos nada</h1>
-                <h2>Parece que voce e seus amigos não postaram nada. Começa a escrever um nova história!</h2>
+                <h2>Parece que você e seus amigos não postaram nada. Começa a escrever um nova história!</h2>
             </div>
+            
         );
     }    
     return (

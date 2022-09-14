@@ -20,26 +20,26 @@ export default function PostForm(props) {
 
     return (
         <form className="post-form" onSubmit={handleSubmit}>
+            <input 
+                value={history}
+                placeholder="Escreva uma nova história..."
+                onChange={(event) => setHistory(event.target.value)}
+            />
+            <div>
+                <img src={userIcon} alt="userIcon" />
+
                 <input 
-                    value={history}
-                    placeholder="Escreva uma nova história..."
-                    onChange={(event) => setHistory(event.target.value)}
+                    value={userName}
+                    placeholder="Digite seu nome..."
+                    onChange={(event) => setUserName(event.target.value)}
                 />
-                <div>
-                    <img src={userIcon} alt="userIcon" />
 
-                    <input 
-                        value={userName}
-                        placeholder="Digite seu nome..."
-                        onChange={(event) => setUserName(event.target.value)}
-                    />
-
-                    <button type="submit">
-                        <img src={paperPlaneIcon} alt="paper-plane" />
-                    
-                        Publicar
-                    </button>
-                </div>
-            </form>
+                <button type="submit">
+                    <img src={paperPlaneIcon} alt="paper-plane" />
+                
+                    Publicar
+                </button>
+            </div>
+        </form>
     )
 }
