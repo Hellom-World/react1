@@ -22,7 +22,11 @@ export default function Home() {
         <>
             <PostForm onSubmit={handleSubmit} />
             <main>
-                <Feed posts={posts} />
+                <Feed 
+                    posts={posts} 
+                    title="Meu feed"
+                    subtitle="Acompanhe o que seus amigos estão pensando em tempo real"
+                />
             </main>
         </>
     );
