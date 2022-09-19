@@ -4,7 +4,7 @@ export default function() {
     const posts = [  
       {
         id: Math.random(),
-        content: 'history',
+        content: 'Sumi, mas estou vivo o/',
         userName: 'Hellom',
         publishedAt: new Date(),
       }];
