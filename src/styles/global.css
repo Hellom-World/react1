@@ -42,6 +42,8 @@
   --primary: #4763ff;
   --primary-light: #7086ff;
   --primary-dark: #1834cc;
+  --danger: #e53e3e;
+  --danger-light: #f9eaea;
 }
 
 * {
@@ -55,4 +57,25 @@
 body {
   background-color: var(--white);
   color: var(--gray-700);
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spin 1s infinite linear;
+  -webkit-animation: spin 1s infinite linear;
+  -moz-animation: spin 1s infinite linear;
 }

@@ -66,3 +66,16 @@
   background-color: var(--gray-400);
   cursor: default;
 }
+
+.post-form .error-container {
+  border: 0;
+  padding: 16px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--danger);
+  background-color: var(--danger-light);
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
